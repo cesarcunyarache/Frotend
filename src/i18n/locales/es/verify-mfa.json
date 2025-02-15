@@ -1,0 +1,20 @@
+{
+  "title": "Autenticación de dos factores",
+  "description": "Ingresa el código de tu aplicación de autenticación",
+  "actions": {
+    "submit": "Continuar",
+    "back": "Volver a iniciar sesión"
+  },
+  "inputs": {
+    "code": {
+      "label": "Código de un solo uso",
+      "validation": {
+        "required": "El código es requerido",
+        "length": "El código debe tener 6 dígitos",
+        "server": {
+          "invalid": "El código no es válido"
+        }
+      }
+    }
+  }
+}

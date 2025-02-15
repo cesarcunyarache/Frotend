@@ -1,0 +1,70 @@
+{
+  "title": "Create an Account",
+  "description": "Enter your details to create a new account",
+  "actions": {
+    "submit": "Sign Up",
+    "accountAlreadyExists": "Already have an account?"
+  },
+  "inputs": {
+    "firstName": {
+      "label": "First Name",
+      "validation": {
+        "required": "First Name is required"
+      }
+    },
+    "lastName": {
+      "label": "Last Name",
+      "validation": {
+        "required": "Last Name is required"
+      }
+    },
+    "name": {
+      "label": "Name",
+      "placeholder": "John Doe",
+      "validation": {
+        "required": "Name is required",
+        "min": "Name must be at least 3 characters"
+      }
+    },
+    "email": {
+      "label": "Email",
+      "validation": {
+        "required": "Email is required",
+        "invalid": "Email is not valid",
+        "server": {
+          "emailAlreadyExists": "Email already exists"
+        }
+      }
+    },
+    "password": {
+      "label": "Password",
+      "validation": {
+        "required": "Password is required",
+        "server": {
+          "incorrectPassword": "Password is not valid"
+        },
+        "length": "At least 8 characters",
+        "min": "Password must be at least 8 characters",
+        "number": "Must contain at least 1 number",
+        "lowercase": "Must contain at least 1 lowercase letter",
+        "uppercase": "Must contain at least 1 uppercase letter"
+      }
+    },
+    "confirmPassword": {
+      "label": "Confirm password",
+      "placeholder": "confirm password",
+      "validation": {
+        "required": "This field is required",
+        "match": "Passwords do not match"
+      }
+    },
+    "policy": {
+      "label": "Privacy Policy",
+      "agreement": "I have read and accept ",
+      "validation": {
+        "required": "Consent to the Privacy Policy is required"
+      }
+    }
+  },
+  "or": "OR"
+}

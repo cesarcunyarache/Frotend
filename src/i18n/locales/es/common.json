@@ -1,0 +1,8 @@
+{
+  "brand": "Whisk Inc.",
+  "loading": "Cargando...",
+  "error": {
+    "default": "Algo salió mal",
+    "connection": "Error de conexión"
+  }
+}

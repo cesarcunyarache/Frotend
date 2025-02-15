@@ -1,0 +1,59 @@
+{
+  "title": "Crear una cuenta",
+  "description": "Ingresa tus datos para crear una nueva cuenta",
+  "actions": {
+    "submit": "Registrarse",
+    "signIn": "Iniciar Sesión",
+    "haveAccount": "¿Ya tienes una cuenta?"
+  },
+  "inputs": {
+    "name": {
+      "label": "Nombres",
+      "placeholder": "John Doe",
+      "validation": {
+        "required": "El nombre es requerido",
+        "min": "El nombre debe tener al menos 3 caracteres"
+      }
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "placeholder": "correo@ejemplo.com",
+      "validation": {
+        "required": "El correo electrónico es requerido",
+        "invalid": "El correo electrónico no es válido",
+        "server": {
+          "emailExists": "El correo electrónico ya existe"
+        }
+      }
+    },
+    "password": {
+      "label": "Contraseña",
+      "placeholder": "contraseña",
+      "validation": {
+        "required": "La contraseña es requerida",
+        "min": "La contraseña debe tener al menos 8 caracteres",
+        "length": "Al menos 8 caracteres",
+        "number": "Al menos 1 número",
+        "lowercase": "Al menos 1 letra minúscula",
+        "uppercase": "Al menos 1 letra mayúscula"
+      }
+    },
+    "confirmPassword": {
+      "label": "Confirmar contraseña",
+      "placeholder": "confirmar contraseña",
+      "validation": {
+        "required": "Este campo es requerido",
+        "match": "Las contraseñas no coinciden"
+      }
+    }
+  },
+  "or": "O",
+  "passwordStrength": {
+    "requirements": {
+      "length": "Al menos 8 caracteres",
+      "number": "Al menos 1 número",
+      "lowercase": "Al menos 1 letra minúscula",
+      "uppercase": "Al menos 1 letra mayúscula"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Verify your email",
+  "description": "We've sent a verification code to your email",
+  "actions": {
+    "submit": "Verify",
+    "resend": "Resend code",
+    "back": "Back to sign in"
+  },
+  "inputs": {
+    "code": {
+      "label": "Verification code",
+      "validation": {
+        "required": "Code is required",
+        "length": "Code must be 6 digits",
+        "server": {
+          "invalid": "Code is not valid",
+          "expired": "Code has expired"
+        }
+      }
+    }
+  }
+}

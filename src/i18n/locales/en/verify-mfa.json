@@ -1,0 +1,20 @@
+{
+  "title": "Two-Factor Authentication",
+  "description": "Enter the code from your authenticator app",
+  "actions": {
+    "submit": "Continue",
+    "back": "Back to sign in"
+  },
+  "inputs": {
+    "code": {
+      "label": "One-time code",
+      "validation": {
+        "required": "Code is required",
+        "length": "Code must be 6 digits",
+        "server": {
+          "invalid": "Code is not valid"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Verifica tu correo electrónico",
+  "description": "Te hemos enviado un código de verificación a tu correo electrónico",
+  "actions": {
+    "submit": "Verificar",
+    "resend": "Reenviar código",
+    "back": "Volver a iniciar sesión"
+  },
+  "inputs": {
+    "code": {
+      "label": "Código de verificación",
+      "validation": {
+        "required": "El código es requerido",
+        "length": "El código debe tener 6 dígitos",
+        "server": {
+          "invalid": "El código no es válido",
+          "expired": "El código ha expirado"
+        }
+      }
+    }
+  }
+}
